@@ -1,0 +1,98 @@
+/* ฟอนต์ */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Prompt&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Prompt', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* ส่วน Header */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: gold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: gold;
+}
+
+/* Hero Text */
+.hero-text {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+  color: gold;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.hero-text button {
+  background-color: gold;
+  border: none;
+  color: black;
+  font-weight: bold;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border-radius: 5px;
+}
+
+.hero-text button:hover {
+  background-color: #e0b800;
+}
+
+/* About Section */
+.about {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #f9f9f9
