@@ -7,17 +7,11 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- 🔻 Navbar จะแทรกตรงนี้ -->
+  <div id="navbar-container"></div>
+
   <header class="hero">
-    <nav class="navbar">
-      <div class="logo">GoldenStay</div>
-      <ul class="nav-links">
-        <li><a href="#">หน้าแรก</a></li>
-        <li><a href="#">ห้องพัก</a></li>
-        <li><a href="#">บริการ</a></li>
-        <li><a href="#">ติดต่อเรา</a></li>
-      </ul>
-      <button class="login-btn" onclick="login()">ล็อกอิน</button>
-    </nav>
     <div class="hero-text">
       <h1>ยินดีต้อนรับสู่ GoldenStay</h1>
       <p>โรงแรมหรูหราสำหรับคุณที่คู่ควร</p>
