@@ -16,6 +16,7 @@
         <li><a href="#">บริการ</a></li>
         <li><a href="#">ติดต่อเรา</a></li>
       </ul>
+      <button class="login-btn" onclick="login()">ล็อกอิน</button>
     </nav>
     <div class="hero-text">
       <h1>ยินดีต้อนรับสู่ GoldenStay</h1>

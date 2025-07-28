@@ -1,4 +1,3 @@
-/* ฟอนต์ */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Prompt&display=swap');
 
 * {
@@ -13,7 +12,6 @@ body {
   color: #333;
 }
 
-/* ส่วน Header */
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1600&q=80');
@@ -26,12 +24,12 @@ body {
   justify-content: space-between;
 }
 
-/* Navbar */
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 3rem;
+  padding: 1.5rem 2rem;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -44,7 +42,8 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .nav-links a {
@@ -58,14 +57,31 @@ body {
   color: gold;
 }
 
+.login-btn {
+  background-color: transparent;
+  border: 2px solid gold;
+  color: gold;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: gold;
+  color: black;
+}
+
 /* Hero Text */
 .hero-text {
   text-align: center;
   margin-bottom: 5rem;
+  padding: 0 1rem;
 }
 
 .hero-text h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: 'Playfair Display', serif;
   color: gold;
 }
@@ -95,4 +111,95 @@ body {
 .about {
   padding: 4rem 2rem;
   text-align: center;
-  background-color: #f9f9f9
+  background-color: #f9f9f9;
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.about p {
+  font-size: 1.1rem;
+  color: #444;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Footer */
+.footer {
+  background-color: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* --- Responsive Design --- */
+
+/* มือถือขนาดเล็ก */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .login-btn {
+    align-self: flex-end;
+    margin-top: 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+}
+
+/* มือถือทั่วไป */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .login-btn {
+    margin-top: 1rem;
+    align-self: flex-end;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+}
+
+/* iPad แนวนอน */
+@media (max-width: 1024px) {
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text p {
+    font-size: 1.1rem;
+  }
+}
